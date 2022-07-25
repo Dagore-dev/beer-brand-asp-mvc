@@ -1,0 +1,11 @@
+﻿@model List<Brand>
+
+<h1>Brands</h1>
+
+<ul>
+    @foreach (Brand brand in Model) {
+        <li>
+            @Html.DisplayFor(model => brand.Name)
+        </li>
+    }
+</ul>
